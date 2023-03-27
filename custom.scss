@@ -1,0 +1,62 @@
+nav{$main-color : red;
+
+.dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]::after {
+    border-bottom: 0.35em solid transparent;
+    border-left: 0.35em solid;
+    border-right: 0;
+    border-top: 0.35em solid transparent;
+    margin-left: 0.3rem; }
+
+    .nav-dropdown .link.dropdown-toggle::after {
+        margin-left: .25rem;
+        border-top: 0.35em solid;
+        border-right: 0.35em solid transparent;
+        border-left: 0.35em solid transparent;
+        border-bottom: 0; }
+
+        .mbr-arrow-up {
+            bottom: 25px;
+            right: 90px;
+            position: fixed;
+            text-align: right;
+            z-index: 5000;
+            color: $main-color;
+            font-size: 22px; }
+  
+            .mbr-arrow-up a {
+                background: rgba(0, 0, 0, 0.2);
+                border-radius: 50%;
+                color: $main-color;
+                display: inline-block;
+                height: 60px;
+                width: 60px;
+                border: 2px solid $main-color;
+                outline-style: none !important;
+                position: relative;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+                text-align: center; }
+
+                #scrollToTop a i::before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    border-bottom: 2.5px solid $main-color ;
+                    border-left: 2.5px solid $main-color;
+                    width: 27.8%;
+                    height: 27.8%;
+                    left: 50%;
+                    top: 50%;
+                    -webkit-transform: rotate(135deg);
+                    transform: translateY(-30%) translateX(-50%) rotate(135deg); }
+                    .navbar-dropdown {
+                        left: 0;
+                        padding: 0;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        transition: all 5 ease;
+                        z-index: 1030;
+                        background:$main-color ; }
+                    }
